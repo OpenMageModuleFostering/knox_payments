@@ -1,13 +1,13 @@
 {
     "name": "OpenMageModuleFostering/Knox_Payments",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-v3.0",
     "homepage": "",
-    "description": "Accept payments with Knox Payments",
+    "description": "Allow customers to pay seemlessly with their online banking credentials.",
     "authors": [
     {
-        "name": "Knox Payments",
-        "email": "tommy@knoxpayments.com"
+        "name": "Elizabeth Kukla",
+        "email": "elizabeth@knoxpayments.com"
     }
 ],
     "suggest": {

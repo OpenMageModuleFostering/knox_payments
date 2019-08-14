@@ -1,62 +1,20 @@
 <?xml version="1.0"?>
 <package>
     <name>Knox_Payments</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
-    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
     <extends/>
-    <summary>Accept payments with Knox Payments</summary>
-    <description>Knox enables your customers to make seamless ACH payments with just their online banking credentials, providing a better customer experience and sparing merchants from incredibly high card processing fees. &#xD;
+    <summary>Allow customers to pay seemlessly with their online banking credentials.</summary>
+    <description>Allow your customers to pay seamlessly with just their online banking credentials. &#xD;
 &#xD;
-&#xD;
-IMPORTANT SETUP&#xD;
-For knox to work, an admin must create a SOAP api role and user so the plugin can communicate back to your store.&#xD;
-&#xD;
-Add a role for Knox:&#xD;
-System=&gt; Web Services =&gt; SOAP- Roles&#xD;
-click Add New Role&#xD;
-Role Name: Knox&#xD;
-Resource Access: All (defaults to &#x201C;custom&#x201D; so this must be updated under role resources)&#xD;
-Save the role&#xD;
-&#xD;
-Add a user for Knox&#xD;
-System=&gt; Web Services =&gt; SOAP- Users&#xD;
-click Add New User&#xD;
-Under User Info:&#xD;
-	User Name : Knox (case sensitive)&#xD;
-	First Name, Last Name, Email can be made anything be the admin&#xD;
-	API Key: enter your knox api key (found in your knox dashboard)&#xD;
-Under User Role:&#xD;
-you should see the role &#x201C;Knox&#x201D; that you just created, select the role &#x201C;Knox&#x201D; for the user &#x201C;Knox you are creating.&#xD;
-Save the User&#xD;
-&#xD;
-&#xD;
-Magento 1.5 or later</description>
-    <notes>For knox to work, an admin must create a SOAP api role and user so the plugin can communicate back to your store.&#xD;
-&#xD;
-Add a role for Knox:&#xD;
-System=&gt; Web Services =&gt; SOAP- Roles&#xD;
-click Add New Role&#xD;
-Role Name: Knox&#xD;
-Resource Access: All (defaults to &#x201C;custom&#x201D; so this must be updated under role resources)&#xD;
-Save the role&#xD;
-&#xD;
-Add a user for Knox&#xD;
-System=&gt; Web Services =&gt; SOAP- Users&#xD;
-click Add New User&#xD;
-Under User Info:&#xD;
-	User Name : Knox (case sensitive)&#xD;
-	First Name, Last Name, Email can be made anything be the admin&#xD;
-	API Key: enter your knox api key (found in your knox dashboard)&#xD;
-Under User Role:&#xD;
-you should see the role &#x201C;Knox&#x201D; that you just created, select the role &#x201C;Knox&#x201D; for the user &#x201C;Knox you are creating.&#xD;
-Save the User&#xD;
-</notes>
-    <authors><author><name>Knox Payments</name><user>knoxpayments</user><email>tommy@knoxpayments.com</email></author><author><name>Elizabeth Kukla</name><user>KnoxPayments</user><email>elizabeth@knoxpayments.com</email></author></authors>
-    <date>2014-08-06</date>
-    <time>22:06:18</time>
+Knox enables the next generation of ACH payments, allowing users to make secure payments with just their online banking username and password, all while saving merchants from the burdens of incredibly high processing fees.</description>
+    <notes>See Configuration Guidelines on MagentoConnect Extension Page. </notes>
+    <authors><author><name>Elizabeth Kukla</name><user>KnoxPayments</user><email>elizabeth@knoxpayments.com</email></author></authors>
+    <date>2014-08-07</date>
+    <time>18:23:24</time>
     <contents><target name="magelocal"><dir name="Knox"><dir name="KnoxGateway"><dir name="Helper"><file name="Data.php" hash="5bd4ca4320d14e43f9c1cb2c75c81c1c"/></dir><dir name="Model"><file name="Observer.php" hash="1c39f6b9783f6c039895376fc36e35ff"/><file name="Standard.php" hash="9ce57b760f8e610d18a328610a21bb5e"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="etc"><file name="config.xml" hash="f4cf4dab44220740b29355813c3a0d1d"/><file name="system.xml" hash="92dc8887092782dc1c78d647732d0b87"/></dir><file name=".DS_Store" hash="6a4832a0d6d4f18d18a0fb9c4db7cc40"/></dir><file name=".DS_Store" hash="b0a445b5f4a500ade9471247a67d4b92"/></dir></target><target name="mageetc"><dir name="modules"><file name="Knox_Knoxgateway.xml" hash="9c683e5c9faa8fbbe095e93993a70926"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
