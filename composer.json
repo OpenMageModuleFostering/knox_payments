@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Knox_Payments",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Accept payments with Knox Payments",
+    "authors": [
+    {
+        "name": "Knox Payments",
+        "email": "tommy@knoxpayments.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
